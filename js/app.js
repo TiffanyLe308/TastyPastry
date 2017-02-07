@@ -1,4 +1,4 @@
-var app = angular.module('tastyPastry', ['ui.router']);
+var app = angular.module('tastyPastry', ['ui.router', 'ui.bootstrap']);
 
 app.config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/home');
@@ -6,24 +6,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
       url: '/home',
-      templateUrl: '../html/home.html'
+      templateUrl: '../html/home.html',
+      controller: 'HomeController'
     })
-
-    .state('home.list', {
-      url: '/list',
-      templateUrl: '../html/list.html',
-      controller: function($scope) {
-          $scope.dogs = ['Bernese', 'Husky', 'Goldendoodle'];
-      }
-    })
-
-    // nested list with just some random string data
-    .state('home.paragraph', {
-        url: '/paragraph',
-        template: 'I could sure use a drink right now.'
-    })
-
-
     .state('ourmenu', {
       url: '/ourmenu',
       templateUrl: '../html/ourmenu.html'

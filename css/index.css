@@ -1,0 +1,36 @@
+/*--------Navbar-------*/
+
+
+
+/*--------Footer-------*/
+
+.footer {
+  background-color: #edeaea;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer a {
+  color: #627732;
+  margin: 2px;
+}
+
+.footer a:hover {
+  color: #652A1C;
+}
+
+.footer h3 {
+  padding-top: 10px;
+}
+
+.footer .copy {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+/*--------MediaQueries-------*/
+
+@media (max-width: 480px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {}

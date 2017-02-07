@@ -1,0 +1,26 @@
+{
+  "name": "tastypastry",
+  "version": "1.0.0",
+  "description": "bakery store website",
+  "main": "index.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TiffanyLe308/TastyPastry.git"
+  },
+  "author": "Tiffany Le <tiffanyle308@gmail.com> (http://www.aquariumnerd.net/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TiffanyLe308/TastyPastry/issues"
+  },
+  "homepage": "https://github.com/TiffanyLe308/TastyPastry#readme",
+  "dependencies": {
+    "angular-ui-bootstrap": "^2.5.0",
+    "bootstrap": "^3.3.7"
+  }
+}
