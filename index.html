@@ -1,0 +1,84 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="css/index.css"/>
+      <title>TastyPastry</title>
+
+      <script type="text/javascript" src="js/vendor/angular.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-resource.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+
+    </head>
+
+    <body ng-app="tastyPastry">
+      <nav class="navbar navbar-default header">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand brand" ui-sref="#">TastyPastry</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav intro">
+              <li><a ui-sref="home">Home</a></li>
+              <li><a ui-sref="ourmenu">Our Menu</a></li>
+              <li><a ui-sref="ourservices">Our Services</a></li>
+              <li><a ui-sref="events">Events</a></li>
+              <li><a ui-sref="contactus">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div>
+        <div ui-view></div>
+      </div>
+
+
+      <div class="footer">
+        <h3>Follow us</h3>
+          <div class="row social_icons">
+            <div class="col-md-6">
+              <a href="https://www.facebook.com/groups/180787488662434/"><i class="fa fa-camera-retro fa-3x"></i></a>
+              <a href="https://www.instagram.com/scaped_aquariumgram/"><i class="fa fa-instagram fa-3x"></i></a>
+              <a href="https://fi.pinterest.com/explore/nano-aquarium/"><i class="fa fa-pinterest-square fa-3x"></i></a>
+
+              <div class="copy">
+                  <p><strong><i>&copy; 2017 TastyPastry - All rights reserved</i></strong></p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+                <h3><strong>Opening Hours</strong></h3>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      <!-- Modules -->
+      <script type="text/javascript" src="js/app.js"></script>
+
+      <!-- Controllers -->
+      <script type="text/javascript" src="js/controllers/HomeController.js"></script>
+
+      <!-- Directives -->
+
+
+      <!-- Services -->
+
+
+    </body>
+
+</html>
