@@ -1,0 +1,45 @@
+/*--------Navbar-------*/
+
+.navbar-default .navbar-brand {
+  color: #b57309;
+  padding: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+  font-family: 'Roboto Slab', serif;
+  color: #b57309;
+  font-size: 20px;
+}
+
+/*--------Footer-------*/
+
+.footer {
+  background-color: #edeaea;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer a {
+  color: #b57309;
+  margin: 2px;
+}
+
+.footer a:hover {
+  color: #652A1C;
+}
+
+.footer h3 {
+  padding-top: 10px;
+}
+
+.footer .copy {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+/*--------MediaQueries-------*/
+
+@media (max-width: 480px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {}
