@@ -1,0 +1,54 @@
+.contact-background {
+  width: 100%;
+  height: 350px;
+  background-image: url("../images/img_10.jpg");
+	background-repeat:  no-repeat;
+	background-size: cover;
+}
+
+.contact h2 {
+  padding-top: 50px;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+}
+
+.contact-intro {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.contact-intro .fa {
+  color: #b23e4f;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-intro .cupcake-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-icon, .contact-description {
+  padding-top: 20px;
+}
+
+.google-map {
+  height: 400px;
+}
+
+/*--------MediaQueries-------*/
+
+@media (max-width: 480px) {
+  .google-map {
+    height: 200px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .google-map {
+    height: 300px;
+  }
+}

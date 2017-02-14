@@ -1,4 +1,4 @@
-var app = angular.module('tastyPastry', ['ui.router', 'ui.bootstrap']);
+var app = angular.module('tastyPastry', ['ui.router', 'ui.bootstrap', 'ngMap']);
 
 app.config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/home');

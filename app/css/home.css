@@ -1,9 +1,8 @@
 /*--------Carousel-------*/
 
-.carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      margin: auto;
-      max-height: 600px;
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  margin: auto;
+  max-height: 600px;
 }
 .carousel img {
   min-width: 100%;
@@ -52,9 +51,9 @@
   font-weight: bold;
 }
 
-/*--------Events-------*/
+/*--------Services-------*/
 
-.event-background {
+.service-background {
   height: 300px;
   background-image: url("../images/img_12.jpg");
 	background-repeat:  no-repeat;
@@ -64,39 +63,70 @@
   margin-top: 50px;
 }
 
-.event-overlay {
-    position: absolute;
-    width: 100%;
-    height: 300px;
-    z-index: 2;
-    background-color: #080d15;
-    opacity: .5;
+.service-overlay {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  z-index: 2;
+  background-color: #080d15;
+  opacity: .5;
 }
 
-.hero {
-    position: absolute;
-    left: 20%;
-    margin-top: 5em;
-    z-index: 3;
-    color: #ffffff;
-    font-family: 'Raleway', sans-serif;
+.service-slogan {
+  position: absolute;
+  left: 20%;
+  margin-top: 5em;
+  z-index: 3;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  text-transform: capitalize;
 }
 
-.hero h1 {
-    font-size: 3em;
-    font-weight: bold;
+.service-slogan h1 {
+  font-size: 3em;
+  font-weight: bold;
 }
 
-.event-categories {
+.service-categories {
   padding-top: 50px;
-  line-height: 0.5em;
+}
+
+.service-categories h2 {
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+}
+
+.service-categories h3 {
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  text-transform: capitalize;
+  font-family: 'Playfair Display', serif;
+}
+
+.service-categories h5 {
+  text-align: center;
 }
 
 /*--------MediaQueries-------*/
 
 @media (max-width: 480px) {
-  .event-background {
+  #myCarousel {
     display: none;
+  }
+
+  .introduction-background {
+    height: 300px;
+    background-image: url("../images/img_3.jpg");
+  	background-repeat:  no-repeat;
+  	background-size: cover;
+    background-position: center;
+    min-width: 100%;
+  }
+
+  .service-slogan h1 {
+    font-size: 2em;
   }
 }
 
