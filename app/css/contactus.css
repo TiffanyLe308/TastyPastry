@@ -6,11 +6,12 @@
 	background-size: cover;
 }
 
-.contact h2 {
+.contact h1 {
   padding-top: 50px;
+  font-size: 3em;
   text-align: center;
-  font-family: 'Roboto Slab', serif;
-  font-weight: bold;
+  text-transform: capitalize;
+  font-family: 'Arizonia', cursive;
 }
 
 .contact-intro {

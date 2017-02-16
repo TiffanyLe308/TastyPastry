@@ -1,0 +1,21 @@
+<div class="events-background">
+
+</div>
+
+<div class="events container">
+  <h1>Join us for a sweet journey</h1>
+</div>
+
+<div class="event-categories container" ng-repeat="event in events">
+  <div class="row">
+    <div class="col-md-6 space">
+      <img class="img-responsive" ng-src="{{ event.image }}" />
+    </div>
+
+    <div class="col-md-5 col-md-offset-1 space">
+      <h3> {{ event.title }} </h3>
+      <p> {{ event.description_one }} </p>
+      <p> {{ event.description_two }} </p>
+    </div>
+  </div>
+</div>

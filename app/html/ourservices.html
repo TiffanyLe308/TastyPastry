@@ -1,4 +1,53 @@
-<h4>
-  Have TastyPastry host your next party! We can host a variety of celebration events:
-  Kid and adult birthdays, a night out with friends, bachelorette, bridal and baby showers or any special event.
-</h4>
+<div class="ourservice-background">
+
+</div>
+
+<div class="service container">
+  <h1> Delight your party cake </h1>
+  <p>
+    Have TastyPastry prepare your next party desserts! We can help a variety of celebration events:
+    Kid and adult birthdays, a night out with friends, bachelorette, bridal and baby showers or any special event.
+  </p>
+  <p>
+    All of the packages can customize to suit with your needs. We will try our best to satisfy your sweet dream.
+  </p>
+  <p> Dietary Modifications: </p>
+  <p class="package-detail"> - Regular chocolate cake is egg free. </p>
+  <p class="package-detail"> - Can be made gluten free (contains eggs). </p>
+  <p class="package-detail"> - Can be made vegan (select for dairy free). </p>
+  <p class="package-detail"> - Can be made gluten free & vegan (select for gluten free & dairy free). </p>
+
+  <p class="service-note">
+    Please note, because we custom bake your order, all orders MUST be placed at least 48 hours in advance. Cake once ordered is non-refundable.
+  </p>
+
+  <div ng-repeat="package in packages">
+    <h2> {{ package.title }} </h2>
+    <img class="img-responsive" ng-src="{{ package.image }}"/>
+    <p class="package-intro">
+      {{ package.description }}
+    </p>
+
+    <div class="row">
+      <div class="col-md-6 col-md-offset-2">
+        <p class="package-detail"> {{ package.detailone }}</p>
+        <p class="package-detail"> {{ package.detailtwo }} </p>
+        <p class="package-detail"> {{ package.detailthree }} </p>
+
+        <p> Special varieties for package which you can customize: </p>
+
+        <h5 class="package-detail"> {{ package.adult }} </h5>
+        <p class="package-detail"> {{ package.detailfour }} </p>
+        <p class="package-detail"> {{ package.detailfive }} </p>
+        <p class="package-detail"> {{ package.detailsix }} </p>
+        <h5 class="package-detail"> {{ package.children }} </h5>
+        <p class="package-detail"> {{ package.detailseven }} </p>
+        <p class="package-detail"> {{ package.detaileight }} </p>
+        <p class="package-detail"> {{ package.detailnine }} </p>
+        <p class="package-detail"> {{ package.detailten }} </p>
+        <p class="package-detail"> {{ package.detaileleven }} </p>
+        <p class="package-detail"> {{ package.notes }} </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -15,11 +15,13 @@ app.config(function($stateProvider, $urlRouterProvider) {
     })
     .state('ourservices', {
       url: '/ourservices',
-      templateUrl: '../html/ourservices.html'
+      templateUrl: '../html/ourservices.html',
+      controller: 'OurServicesController'
     })
     .state('events', {
       url: '/events',
-      templateUrl: '../html/events.html'
+      templateUrl: '../html/events.html',
+      controller: 'EventsController'
     })
     .state('contactus', {
       url: '/contactus',

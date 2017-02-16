@@ -40,14 +40,14 @@
   </div>
 
   <div class="introduction container">
-    <h2>
+    <h1>
       Creativity and Passion for Baking
-    </h2>
+    </h1>
   </div>
 
   <div class="menu-categories container">
     <div class="row">
-      <div class="col-md-4" ng-repeat="menu in menus">
+      <div class="col-md-4 space" ng-repeat="menu in menus">
         <img class="img-responsive" ng-src="{{ menu.image }}" />
         <h3>{{ menu.name }}</h3>
         <p>{{ menu.description }}</p>
@@ -65,17 +65,16 @@
   </div>
 
   <div class="service-categories container">
-    <h2>Relax and let sweet treats comfort you</h2>
-    <h5>We want to impress, entertain and inspire your party with our food. So you can enjoy your event as much as your guests.</h5>
+    <h1>Relax and let sweet treats comfort you</h1>
   </div>
 
   <div class="service-categories container">
     <div class="row">
-      <div class="col-md-4" ng-repeat="service in services">
+      <div class="col-md-4 space" ng-repeat="service in services">
         <img class="img-responsive" ng-src="{{ service.image }}" />
         <h3>{{ service.name }}</h3>
         <p>{{ service.description }}</p>
-        <a href="#">See more</a>
+        <a href="#!/ourservices">See more</a>
       </div>
     </div>
   </div>

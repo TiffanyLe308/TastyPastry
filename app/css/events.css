@@ -1,0 +1,29 @@
+.events-background {
+  width: 100%;
+  height: 350px;
+  background-image: url("../images/img_16.jpg");
+	background-repeat:  no-repeat;
+	background-size: cover;
+  background-position: center;
+}
+
+.events h1 {
+  padding-top: 50px;
+  font-size: 3em;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Arizonia', cursive;
+}
+
+.event-categories {
+  padding-top: 50px;
+}
+
+.space {
+  margin-bottom: 15px;
+}
+
+.event-categories h3 {
+  text-transform: capitalize;
+  text-align: center;
+}
