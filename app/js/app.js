@@ -11,7 +11,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
     })
     .state('ourmenu', {
       url: '/ourmenu',
-      templateUrl: '../html/ourmenu.html'
+      templateUrl: '../html/ourmenu.html',
+      controller: 'MenuController'
     })
     .state('ourservices', {
       url: '/ourservices',

@@ -1,0 +1,68 @@
+<div class="ourmenu-background">
+
+</div>
+
+<div class="menu container">
+  <h1>A little treat for you</h1>
+  <p class="menu-intro">
+    All cupcakes, cakes, cake pops and cookies are baked to order and can be customised to however you like.
+    Here is a price and portion guide to help you order the right cake for you. All prices are from a base price because every order is unique.
+  </p>
+
+  <h2>Cake prices</h2>
+  <div class="row">
+    <div class="col-md-4" ng-repeat="menu in menus">
+      <h3>{{ menu.name }}</h3>
+      <p> {{ menu.description_one }} <span class="menu-price">{{ menu.price_one }}</span></p>
+      <p> {{ menu.description_two }} <span class="menu-price">{{ menu.price_two }}</span></p>
+      <p> {{ menu.description_three }} <span class="menu-price">{{ menu.price_three }}</span></p>
+      <p> {{ menu.description_four }} </p>
+    </div>
+  </div>
+
+  <h2>Flavors</h2>
+  <p class="menu-flavor">
+    We bake a variety of flavours and can add extra fillings such as strawberry jam, raspberry jam, etc.
+    All flavours can be used for the sponge and buttercream. Go ahead and create your perfect combination.
+    If your favourite flavour is not listed below then let me know and I will bake it for you.
+  </p>
+
+  <div class="row">
+     <div class="col-md-6" ng-repeat="flavor in flavors | limitTo: flavors.length /2: 0">
+         {{ flavor }}
+     </div>
+     <div class="col-md-6" ng-repeat="flavor in flavors | limitTo: flavors.length /2: flavors.length /2">
+         {{ flavor }}
+     </div>
+  </div>
+
+  <h2>Portion sizes</h2>
+  <p>
+    <em>All portion sizes are approximate and based on a 1" x 1" slice of sponge cake. A 4" cake is only available as part of a tiered cake.</em>
+  </p>
+
+  <div class="row size">
+    <div class="col-md-4" ng-repeat="size in sizes">
+      <div class="col-xs-12">
+        <h3>{{ size.title }}</h3>
+        <img class="img-responsive" ng-src="{{ size.image }}" />
+      </div>
+      <div class="col-xs-6">
+        <h3>Size</h3>
+        <p> {{ size.size_1 }}</p>
+        <p> {{ size.size_2 }}</p>
+        <p> {{ size.size_3 }}</p>
+        <p> {{ size.size_4 }}</p>
+        <p> {{ size.size_5 }}</p>
+      </div>
+      <div class="col-xs-6">
+        <h3>Portions</h3>
+      </div>
+        <p> {{ size.portion_1 }}</p>
+        <p> {{ size.portion_2 }}</p>
+        <p> {{ size.portion_3 }}</p>
+        <p> {{ size.portion_4 }}</p>
+        <p> {{ size.portion_5 }}</p>
+    </div>
+  </div>
+</div>
