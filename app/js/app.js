@@ -26,6 +26,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     })
     .state('contactus', {
       url: '/contactus',
-      templateUrl: '../html/contactus.html'
+      templateUrl: '../html/contactus.html',
+      controller: 'ContactUsController'
     });
 });
