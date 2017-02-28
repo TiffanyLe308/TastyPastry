@@ -28,10 +28,10 @@
   </p>
 
   <div class="row">
-     <div class="col-md-6" ng-repeat="flavor in flavors | limitTo: flavors.length /2: 0">
+     <div class="col-xs-6 col-md-6" ng-repeat="flavor in flavors | limitTo: flavors.length /2: 0">
          {{ flavor }}
      </div>
-     <div class="col-md-6" ng-repeat="flavor in flavors | limitTo: flavors.length /2: flavors.length /2">
+     <div class="col-xs-6  col-md-6" ng-repeat="flavor in flavors | limitTo: flavors.length /2: flavors.length /2">
          {{ flavor }}
      </div>
   </div>
@@ -63,6 +63,22 @@
         <p> {{ size.portion_3 }}</p>
         <p> {{ size.portion_4 }}</p>
         <p> {{ size.portion_5 }}</p>
+    </div>
+  </div>
+
+  <div class="menu-button">
+    <a href="#/ourmenu" ng-click="cupcake = !cupcake" class="btn btn-primary btn-lg">Cupcakes</a>
+  </div>
+
+  <div class="menu-gallery" ng-show="cupcake">
+    <div class="menu-slide">
+      <div class="menu-slide-image">
+        <carousel interval="myInterval">
+          <slide ng-repeat="menuslide in menuslides" active="menuslide.active">
+            <img class="img-responsive" ng-src="{{menuslide.image}}">
+          </slide>
+        </carousel>
+      </div>
     </div>
   </div>
 </div>

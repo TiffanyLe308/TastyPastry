@@ -44,6 +44,7 @@
     }
   },
   "dependencies": {
+    "ng-image-gallery": "^2.0.8",
     "ngmap": "^1.18.0"
   }
 }

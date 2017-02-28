@@ -69,5 +69,34 @@ app.controller('MenuController', ['$scope', function($scope) {
       portion_1: '1',
       portion_2: '2',
     }
+  ];
+
+  $scope.cupcake = false;
+  $scope.buttons = [
+    {
+      title: 'Cupcakes'
+    },
+    {
+      title: 'Treats & Favours'
+    },
+    {
+      title: 'Cakes'
+    }
   ]
+
+  $scope.myInterval = 3000;
+  $scope.menuslides = [
+    {
+      image: '../../images/img_4.jpg'
+    },
+    {
+      image: '../../images/img_5.jpg'
+    },
+    {
+      image: '../../images/img_22.jpg'
+    },
+    {
+      image: '../../images/img_7.jpg'
+    }
+  ];
 }]);

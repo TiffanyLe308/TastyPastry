@@ -17,15 +17,9 @@
   background: linear-gradient(white, #FDFDFD);
 }
 
-.carousel-indicators li {
-  background-color: #b57309;
-}
+.carousel-indicators li { visibility: hidden; }
 
-.carousel-indicators .active {
-  background-color: #652A1C;
-}
-
-.glyphicon {
+.icon-next {
   color: #b57309;
 }
 
@@ -120,7 +114,7 @@ a:hover {
 /*--------MediaQueries-------*/
 
 @media (max-width: 480px) {
-  #myCarousel {
+  .home_gallery {
     display: none;
   }
 

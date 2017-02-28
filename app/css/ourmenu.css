@@ -40,3 +40,46 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.menu-gallery {
+  position: relative;
+  padding: 50px 0;
+}
+
+.menu-slide {
+  height: 400px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-slide img {
+  height: 400px;
+  position: absolute
+  height: auto;
+  width: 60%;
+}
+
+.menu-slide .carousel-control {
+  width: 5%;
+}
+
+.menu-slide .carousel-control a:hover {
+  color: #f2f2f2;
+}
+
+/*--------MediaQueries-------*/
+
+@media (max-width: 320px) {
+  .menu-slide {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  .menu-slide {
+    height: 250px;
+    width: 100%;
+  }
+}
