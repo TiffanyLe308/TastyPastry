@@ -44,11 +44,11 @@
   <div class="row size">
     <div class="col-md-4" ng-repeat="size in sizes">
       <div class="col-xs-12">
-        <h3>{{ size.title }}</h3>
+        <h4>{{ size.title }}</h4>
         <img class="img-responsive" ng-src="{{ size.image }}" />
       </div>
       <div class="col-xs-6">
-        <h3>Size</h3>
+        <h4>Size</h4>
         <p> {{ size.size_1 }}</p>
         <p> {{ size.size_2 }}</p>
         <p> {{ size.size_3 }}</p>
@@ -56,7 +56,7 @@
         <p> {{ size.size_5 }}</p>
       </div>
       <div class="col-xs-6">
-        <h3>Portions</h3>
+        <h4>Portions</h4>
       </div>
         <p> {{ size.portion_1 }}</p>
         <p> {{ size.portion_2 }}</p>
@@ -66,18 +66,53 @@
     </div>
   </div>
 
-  <div class="menu-button">
-    <a href="#/ourmenu" ng-click="cupcake = !cupcake" class="btn btn-primary btn-lg">Cupcakes</a>
-  </div>
+  <h2>Gallery</h2>
 
-  <div class="menu-gallery" ng-show="cupcake">
-    <div class="menu-slide">
-      <div class="menu-slide-image">
-        <carousel interval="myInterval">
-          <slide ng-repeat="menuslide in menuslides" active="menuslide.active">
-            <img class="img-responsive" ng-src="{{menuslide.image}}">
-          </slide>
-        </carousel>
+  <div class="row">
+    <div class="menu-gallery">
+      <div class="col-md-4">
+        <a href="#/ourmenu" ng-click="cupcake = !cupcake"><div class="menu-button">Cupcakes</div></a>
+        <div class="row" ng-show="cupcake">
+          <div class="menu-show">
+            <div class="col-md-6" ng-repeat="cupcake in cupcakes">
+              <div class="thumbnail">
+                <a href="{{cupcake.image}}" data-lightbox="roadtrip">
+                  <img class="menu-gallery-image" ng-src="{{cupcake.image}}">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <a href="#/ourmenu" ng-click="treat = !treat"><div class="menu-button">Treats & Favours</div></a>
+        <div class="row" ng-show="treat">
+          <div class="menu-show">
+            <div class="col-md-6" ng-repeat="treat in treats">
+              <div class="thumbnail">
+                <a href="{{treat.image}}" data-lightbox="roadtrip">
+                  <img class="menu-gallery-image" ng-src="{{treat.image}}">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <a href="#/ourmenu" ng-click="cake = !cake"><div class="menu-button">Cakes</div></a>
+        <div class="row" ng-show="cake">
+          <div class="menu-show">
+            <div class="col-md-6" ng-repeat="cake in cakes">
+              <div class="thumbnail">
+                <a href="{{cake.image}}" data-lightbox="roadtrip">
+                  <img class="menu-gallery-image" ng-src="{{cake.image}}">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

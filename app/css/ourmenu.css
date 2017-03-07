@@ -42,30 +42,28 @@
 }
 
 .menu-gallery {
-  position: relative;
-  padding: 50px 0;
+  text-align: center;
 }
 
-.menu-slide {
-  height: 400px;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+.menu-gallery .menu-gallery-image {
+  width: 100%;
 }
 
-.menu-slide img {
-  height: 400px;
-  position: absolute
-  height: auto;
-  width: 60%;
+.menu-gallery a {
+  text-decoration: none;
 }
 
-.menu-slide .carousel-control {
-  width: 5%;
+.menu-button {
+  margin-top: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #edeaea;
+  border: 1px solid #edeaea;
+  border-radius: 5px;
 }
 
-.menu-slide .carousel-control a:hover {
-  color: #f2f2f2;
+.menu-show {
+  padding-top: 15px;
 }
 
 /*--------MediaQueries-------*/

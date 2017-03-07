@@ -72,31 +72,52 @@ app.controller('MenuController', ['$scope', function($scope) {
   ];
 
   $scope.cupcake = false;
-  $scope.buttons = [
-    {
-      title: 'Cupcakes'
-    },
-    {
-      title: 'Treats & Favours'
-    },
-    {
-      title: 'Cakes'
-    }
-  ]
+  $scope.treat = false;
+  $scope.cake = false;
 
-  $scope.myInterval = 3000;
-  $scope.menuslides = [
+  $scope.cupcakes = [
     {
-      image: '../../images/img_4.jpg'
+      image: '../../images/img_23.jpg'
     },
     {
-      image: '../../images/img_5.jpg'
+      image: '../../images/img_24.jpg'
     },
+    {
+      image: '../../images/img_25.jpg'
+    },
+    {
+      image: '../../images/img_26.jpg'
+    }
+  ];
+
+  $scope.treats = [
+    {
+      image: '../../images/img_28.jpg'
+    },
+    {
+      image: '../../images/img_29.jpg'
+    },
+    {
+      image: '../../images/img_30.jpg'
+    },
+    {
+      image: '../../images/img_31.jpg'
+    }
+  ];
+
+  $scope.cakes = [
     {
       image: '../../images/img_22.jpg'
     },
     {
-      image: '../../images/img_7.jpg'
+      image: '../../images/img_27.jpg'
+    },
+    {
+      image: '../../images/img_32.jpg'
+    },
+    {
+      image: '../../images/img_33.jpg'
     }
   ];
+
 }]);

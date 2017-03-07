@@ -1,14 +1,10 @@
 <div ng-controller="HomeController">
   <div>
-    <div>
-      <div>
-        <carousel interval="myInterval">
-          <slide ng-repeat="homeslide in homeslides" active="homeslide.active">
-            <img class="img-responsive" ng-src="{{homeslide.image}}">
-          </slide>
-        </carousel>
-      </div>
-    </div>
+    <carousel interval="myInterval">
+      <slide ng-repeat="homeslide in homeslides" active="homeslide.active">
+        <img class="img-responsive" ng-src="{{homeslide.image}}">
+      </slide>
+    </carousel>
   </div>
 
   <div class="introduction-background">
